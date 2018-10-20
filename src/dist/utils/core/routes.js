@@ -11,6 +11,7 @@ import AdminAdminister from '../../pages/administer'
 
 import Challenger from '../../pages/challenger'
 import ChallengerFight from '../../pages/fighter'
+import ChallengerPublic from '../../pages/publico'
 
 // import User from '../../user/user'
 // import You from '../../you/you'
@@ -36,6 +37,7 @@ export default (props) => (
 
             <Route exact path="/challenger" component={Challenger} />
             <Route exact path="/challenger/fighter" component={ChallengerFight} />
+            <Route exact path="/challenger/public" component={ChallengerPublic} />
 
           </Switch>
         )}
