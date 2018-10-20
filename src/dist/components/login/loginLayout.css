@@ -59,10 +59,12 @@
 .section-container-login-card-body form div button:hover, .linking:hover {
   color: #fff;
   background-color: #D3B91C;
+  border: none;
 }
 
 .section-container-login-card-body form div button:active, .linking:active {
   color: #fff;
   background-color: #BAA319;
+  border: none;
 }
   

@@ -12,8 +12,8 @@ export default class Login extends React.Component {
 
   onSubmit = (e) => {
     e.preventDefault()
-    console.log(e.target.user.value)
-    console.log(socket.emit('loginn', e.target.user.value))
+    // console.log(e.target.user.value)
+    console.log(socket.emit('login', e.target.user.value))
   }
 
   render(){
