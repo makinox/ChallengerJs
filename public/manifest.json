@@ -4,21 +4,26 @@
   "icons": [
     {
       "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "sizes": "30x30 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "192x192.png",
-      "sizes": "192x192",
-      "type": "image/x-icon"
+      "src": "reg1.png",
+      "sizes": "32x32",
+      "type": "image/png"
     },
     {
-      "src": "512x512.png",
-      "sizes": "512x512",
-      "type": "image/x-icon"
+      "src": "reg2.png",
+      "sizes": "96x96 150x150 any",
+      "type": "image/png"
+    },
+    {
+      "src": "reg3.png",
+      "sizes": "192x192 512x512 any",
+      "type": "image/png"
     }
   ],
-  "start_url": ".",
+  "start_url": "/?utm_source=web_app_manifest",
   "display": "standalone",
   "theme_color": "#EFD81D",
   "background_color": "#ffffff"
