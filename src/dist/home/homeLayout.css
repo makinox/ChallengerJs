@@ -11,6 +11,10 @@
   background-position-y: 100%;
 }
 
+.homeLayout-section i {
+  color: #EFD81D;
+}
+
 .homeLayout-section a {
   text-decoration: none;
   color: #000;
