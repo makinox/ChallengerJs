@@ -1,11 +1,13 @@
 import React from 'react'
+import Core from './dist/utils/core/routes'
+import Navbar from './dist/navbar/navbar'
 
 export default class App extends React.Component {
   render() {
     return (
-      <section>
-        <h1>Holla BarranqullaJs</h1>
-      </section>
+      <Core>
+        <Navbar log={this.props.log}/>
+      </Core>
     )
   }
 }
