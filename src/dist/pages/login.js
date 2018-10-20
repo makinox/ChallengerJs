@@ -1,5 +1,3 @@
 import React from 'react'
-
-export default () => (
-    <h1>Hola login</h1>
-)
+import Login from '../login/loginLayout'
+export default () => <Login />
