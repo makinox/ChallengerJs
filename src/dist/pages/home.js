@@ -1,5 +1,4 @@
 import React from 'react'
+import Home from '../home/homeLayout'
 
-export default () => (
-    <h1>Hola Home</h1>
-)
+export default () => <Home />

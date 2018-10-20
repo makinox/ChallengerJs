@@ -27,7 +27,7 @@ export default (props) => (
             <Link to='/'><img src={img1} alt="Logo de jesús bossa" /></Link>
           </div>
           <div>
-            <Link to='/login'>Inicia sesión</Link>
+            <Link to='/login'>Join</Link>
           </div>
         </nav>
       )}
