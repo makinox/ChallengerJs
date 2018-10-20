@@ -1,7 +1,4 @@
 import React from 'react'
+import AdminLayout from '../components/admin/adminLayout'
 
-export default () => (
-  <section>
-    hola admin
-  </section>
-)
+export default () => <AdminLayout />
