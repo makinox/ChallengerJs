@@ -8,8 +8,8 @@ class Login extends React.Component {
 
   componentDidMount() {
     socket.on('login-success', (user) => {
-      this.props.dispatch({ type: 'LOGIN', payload: { log: true } })
-      this.props.dispatch({ type: 'ADD_CURRENT_USER', payload: user })
+      this.props.dispatch({ type: 'LOGIN', payload: { log: true, user } })
+      // this.props.dispatch({ type: 'ADD_CURRENT_USER', payload: {user} })
 
       if (user.admin) {
         window.location.href = '/admin'
