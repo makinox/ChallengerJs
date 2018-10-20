@@ -1,6 +1,6 @@
 import React from 'react'
 import Core from './dist/utils/core/routes'
-import Navbar from './dist/navbar/navbar'
+import Navbar from './dist/components/navbar/navbar'
 
 export default class App extends React.Component {
   render() {

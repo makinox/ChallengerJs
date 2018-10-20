@@ -1,3 +1,21 @@
 import React from 'react'
-import Login from '../login/loginLayout'
-export default () => <Login />
+
+import LoginLayout from '../components/login/loginLayout'
+import {socket} from '../utils/socket/socket'
+
+export default class Login extends React.Component {
+  
+  componentDidMount() {
+    // console.log(socket)
+  }
+
+  onSubmit = (e) => {
+    e.preventDefault()
+    console.log(e.target.user.value)
+    console.log(socket.emit('login', e.target.user.value))
+  }
+
+  render(){
+    return <LoginLayout submit={this.onSubmit} />
+  }
+} 
