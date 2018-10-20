@@ -43,8 +43,9 @@
 
 
 
-.section-container-login-card-body form div button {
+.section-container-login-card-body form div button, .linking {
   color: #000;
+  text-decoration: none;
   border: none;
   cursor: pointer;
   background-color: #EFD81D;
@@ -55,12 +56,12 @@
   box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, .1);
 }
 
-.section-container-login-card-body form div button:hover {
+.section-container-login-card-body form div button:hover, .linking:hover {
   color: #fff;
   background-color: #D3B91C;
 }
 
-.section-container-login-card-body form div button:active {
+.section-container-login-card-body form div button:active, .linking:active {
   color: #fff;
   background-color: #BAA319;
 }

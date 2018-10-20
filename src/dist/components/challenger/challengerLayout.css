@@ -8,4 +8,20 @@
 .challenger-section-body {
   display: grid;
   grid-template-columns: repeat(2, minmax(auto, 1fr));
+  grid-gap: 30px 30px;
+}
+
+@media (max-width: 650px) {
+  .challenger-section-body {
+    grid-template-columns: minmax(auto, 1fr);
+  }
+}
+
+.challenger-section-body div {
+  padding: 20px 0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .3);
+}
+
+.challenger-section-body a {
+  display: inline-block;
 }
