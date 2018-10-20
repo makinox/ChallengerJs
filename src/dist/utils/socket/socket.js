@@ -1,3 +1,3 @@
 import io from 'socket.io-client'
 
-export const socket = io('http://localhost:800')
+export const socket = io('http://192.168.1.93:7777')

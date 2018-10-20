@@ -8,6 +8,13 @@ export default function reducef(state, action) {
       }
     }
 
+    case 'ADD_CURRENT_USER': {
+      return {
+        ...state,
+        currentUser: action.payload.currentUser
+      }
+    }
+
 
     default:
       return state
