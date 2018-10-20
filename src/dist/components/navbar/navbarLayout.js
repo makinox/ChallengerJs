@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import img1 from '../../assets/navbar/logo.svg'
+import img1 from '../../../assets/navbar/logo.svg'
 import './navbarLayout.css'
 
 export default (props) => (
