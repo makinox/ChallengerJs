@@ -1,0 +1,11 @@
+.challenger-section {
+  display: grid;
+  grid-template-columns: .7fr;
+  justify-content: center;
+  text-align: center;
+}
+
+.challenger-section-body {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 1fr));
+}
