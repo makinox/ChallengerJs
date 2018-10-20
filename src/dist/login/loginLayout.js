@@ -15,10 +15,6 @@ export default (props) => (
             <input type="text" name="user" autoFocus />
           </div>
           <div>
-            <label htmlFor="password">Ingresa tu contraseña</label>
-            <input type="password" name="password" />
-          </div>
-          <div>
             <button type="submit" className="btn">Ingresar</button>
           </div>
         </form>
