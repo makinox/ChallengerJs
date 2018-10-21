@@ -1,0 +1,35 @@
+.homeLayout-section {
+  display: grid;
+  grid-template-columns: 0.7fr;
+  justify-content: center;
+  text-align: center;
+  padding: 30vh 0;
+
+  background-image:linear-gradient(rgba(255, 255 ,255, .7), rgba(255, 255 ,255, .7)),url('../../../assets/navbar/logo.svg');
+  background-repeat: no-repeat;
+  background-position-x: 140%;
+  background-position-y: 100%;
+}
+
+.homeLayout-section i {
+  color: #EFD81D;
+}
+
+.homeLayout-section a {
+  text-decoration: none;
+  color: #000;
+  background-color: #EFD81D;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, .1);
+}
+
+.homeLayout-section a:hover {
+  color: #fff;
+  background-color: #D3B91C;
+}
+
+.homeLayout-section a:active {
+  color: #fff;
+  background-color: #BAA319;
+}
