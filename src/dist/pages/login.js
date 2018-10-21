@@ -1,22 +1,32 @@
 import React from 'react'
 
 import LoginLayout from '../components/login/loginLayout'
-import {socket} from '../utils/socket/socket'
+import { socket } from '../utils/socket/socket'
+import { connect } from 'react-redux'
 
-export default class Login extends React.Component {
-  
+class Login extends React.Component {
+
   componentDidMount() {
-    // console.log(socket)
-    // console.log(socket.on('connection'))
+    socket.on('login-success', (user) => {
+      this.props.dispatch({ type: 'LOGIN', payload: { log: true, user } })
+      // this.props.dispatch({ type: 'ADD_CURRENT_USER', payload: {user} })
+
+      if (user.admin) {
+        window.location.href = '/admin'
+      } else {
+        window.location.href = '/challenger'
+      }
+    })
   }
 
   onSubmit = (e) => {
     e.preventDefault()
-    console.log(e.target.user.value)
-    console.log(socket.emit('loginn', e.target.user.value))
+    socket.emit('login', e.target.user.value)
   }
 
   render(){
     return <LoginLayout submit={this.onSubmit} />
   }
-} 
+}
+
+export default connect()(Login)

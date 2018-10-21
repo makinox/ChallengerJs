@@ -1,0 +1,10 @@
+.propouse-section {
+  display: grid;
+  grid-template-columns: 0.7fr;
+  justify-content: center;
+}
+
+.propouse-section-body form {
+  display: grid;
+  grid-gap: 20px 0;
+}
